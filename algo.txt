@@ -1,0 +1,14 @@
+- array of strings which holds the inputs (name)
+- initially all the inputs from array is inserted into trie, each name in the array is taken as argument for the insert function where each charater of the string is inserted in new level each time. Last character is marked to a variable. 
+- search query is taken as string input from the user, for each search each charater from the string is taken. DFS method is used to traverse through Trie. If the string is "kavya" then search is done using following cycle:
+     k
+     ka 
+     kav 
+     kavy
+     kavya
+- search query is passed to display contacts function where each character in search query is compared with the nodes in trie. Same cycle is repeated for all search cycles. 
+- If a match is found --> the name with same character starting is displayed by calling displaycontactsuntil function.
+- This function takes two arguments --> node where match is found and character which was matched. 
+- trie is iterated till last node and the contact is printed. 
+
+
